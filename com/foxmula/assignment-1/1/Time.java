@@ -1,19 +1,21 @@
+import java.util.*;
+
 public class Time
 {
     private int hour,min,sec;
-    
+
     Time(){
         hour=0;
         min=0;
         sec=0;
     }
-    
+
     Time(int hour, int min, int sec){
         this.hour=hour;
         this.min=min;
         this.sec=sec;
     }
-    
+
     private Time add(Time m){
         Time time=new Time();
         time.hour = this.hour+m.hour;
@@ -29,7 +31,7 @@ public class Time
         }
         return time;
     }
-    
+
 	public static void main(String[] args) {
 		Time m1=new Time(2,60,10);
        	 	Time m2=new Time(5,3,60);
